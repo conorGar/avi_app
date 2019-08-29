@@ -1,6 +1,15 @@
 @font-face {
-    font-family: CronosPro;
-    src: url(../components/CronosPro/CronosPro-Bold.otf);
+    font-family: CronosPro-Semibold;
+    src: url(../components/CronosPro/CronosPro-Semibold.otf);
+}
+@font-face {
+    font-family: CronosPro-LtCapt;
+    src: url(../components/CronosPro/CronosPro-LtCapt.otf);
+}
+
+@font-face {
+    font-family: CronosPro-Ltlt;
+    src: url(../components/CronosPro/CronosPro-LtIt.otf);
 }
 
 .recipe-list-container {
@@ -46,7 +55,7 @@
 .title {
     width: 278px;
     height: 18px;
-    font-family: CronosPro;
+    font-family: CronosPro-Semibold;
     font-size: 14px;
     font-weight: 600;
     font-style: normal;
@@ -55,7 +64,7 @@
     letter-spacing: normal;
     color: var(--black);
     padding: 0 8px 0 8px;
-    margin-top: 3px;
+    margin-top: 0px;
 }
 
 .bookmark {
@@ -71,4 +80,31 @@
     background-color: var(--blush);
     padding-left: 8px;
     margin-top: 2px;
+}
+
+.review-count{
+    font-family: CronosPro-Semibold;
+    color: #c3c2c2;
+    font-size: 16px;
+    margin: 2px 0 0 8px;
+
+}
+
+.trending-categories-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30vw;
+}
+
+.trending-categories {
+    font-family: CronosPro-LtCapt;
+    font-size: 14px;
+}
+
+.category {
+    font-family: CronosPro-LtIt;
+    font-size: 14px;
+    font-style: italic;
+    text-decoration: underline;
 }

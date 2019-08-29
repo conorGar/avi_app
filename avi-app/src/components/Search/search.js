@@ -1,6 +1,6 @@
 import React from 'react'
 import './search.css'
-import bannerimg from './banner.jpg'
+
 
 class Search extends React.Component {
     constructor(props){

@@ -16,22 +16,23 @@ class FoodList extends React.Component {
 
   handleClick = event => {
     event.preventDefault()
-    let { alt } = event.target
+    let { alt } = event.currentTarget
     console.log(alt)
     if (this.state.bookmarkIsClicked === false) {
       this.setState({
         bookmark: bookmarkSelected,
-        bookmarkIsClicked: true
+        bookmarkIsClicked: true,
+        alt
       })
     } else {
       this.setState({
         bookmark: bookmarkNotSelected,
-        bookmarkIsClicked: false
+        bookmarkIsClicked: false,
+        alt
       })
     }
 
     // this.state.bookmarkIsClicked === false ? this.setState({ bookmark })
-
   }
 
   renderRecipes = () => {
@@ -45,15 +46,20 @@ class FoodList extends React.Component {
               className="bookmark"
               onClick={this.handleClick}
               src={this.state.bookmark}
-              alt={index}
+              alt={this.state.alt}
             />
           </div>
+          <div
+            style={{ display: 'flex', flexDirection: 'row', height: `${25}px` }}
+          >
+            <img className="star" src={star} />
+            <img className="star" src={star} />
+            <img className="star" src={star} />
+            <img className="star" src={star} />
+            <img className="star" src={star} />
 
-          <img className="star" src={star} />
-          <img className="star" src={star} />
-          <img className="star" src={star} />
-          <img className="star" src={star} />
-          <img className="star" src={star} />
+            <div className="review-count">(560)</div>
+          </div>
         </div>
       )
     })
@@ -61,7 +67,19 @@ class FoodList extends React.Component {
 
   render() {
     // console.log(this.renderRecipes)
-    return <div className="recipe-list">{this.renderRecipes()}</div>
+    return (
+      <div>
+        <div className="trending-categories-container">
+          <p className="trending-categories">Trending Categories:</p>
+          <p className="category">Breakfast</p>
+          <p className="category">Food Prep</p>
+          <p className="category">1 pot meals</p>
+          <p className="category">Summer</p>
+          <p className="category">Bowls</p>
+        </div>
+        <div className="recipe-list">{this.renderRecipes()}</div>
+      </div>
+    )
   }
 }
 
