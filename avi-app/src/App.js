@@ -4,7 +4,7 @@ import './App.css';
 import Search from './components/search'
 import FoodList from './components/FoodList'
 import RecipePage from './components/RecipePage/index'
-
+import Filter from './components/Filter/index'
 class App extends React.Component {
   constructor(props) {
     super(props)
@@ -75,7 +75,7 @@ render() {
          <Search updateSearch={this.AddInput} handleChange={this.HandleChange} />
         </div>
          <FoodList handleClick={this.HandleClick} recipes={this.state.recipes} recipe={this.props.recipes} state={this.state}/> */}
-        <RecipePage />
+        <Filter />
       </div>
     )
   }
