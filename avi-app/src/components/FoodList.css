@@ -3,6 +3,7 @@
     src: url(../components/CronosPro/CronosPro-Semibold.otf);
 }
 
+
 @font-face {
     font-family: CronosPro-LtCapt;
     src: url(../components/CronosPro/CronosPro-LtCapt.otf);
@@ -108,12 +109,32 @@
     height: 15px;
     background-color: var(--blush);
     padding-left: 6px;
-    margin-top: 12px;
+    margin-top: 3px;
 }
 
 .review-count {
     font-family: CronosPro-Semibold;
     color: #c3c2c2;
     font-size: 16px;
-    margin: 11px 0 0 8px;
+    margin: 2px 0 0 8px;
+
+}
+
+.trending-categories-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30vw;
+}
+
+.trending-categories {
+    font-family: CronosPro-LtCapt;
+    font-size: 14px;
+}
+
+.category {
+    font-family: CronosPro-LtIt;
+    font-size: 14px;
+    font-style: italic;
+    text-decoration: underline;
 }
