@@ -2,6 +2,7 @@
     font-family: CronosPro-Semibold;
     src: url(../components/CronosPro/CronosPro-Semibold.otf);
 }
+
 @font-face {
     font-family: CronosPro-LtCapt;
     src: url(../components/CronosPro/CronosPro-LtCapt.otf);
@@ -10,6 +11,25 @@
 @font-face {
     font-family: CronosPro-Ltlt;
     src: url(../components/CronosPro/CronosPro-LtIt.otf);
+}
+
+.trending-categories-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 35vw;
+}
+
+.trending-categories {
+    font-family: CronosPro-LtCapt;
+    font-size: 14px;
+}
+
+.category {
+    font-family: CronosPro-LtIt;
+    font-size: 14px;
+    font-style: italic;
+    text-decoration: underline;
 }
 
 .recipe-list-container {
@@ -23,7 +43,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-content: space-around;    
+    align-content: space-around;
     width: 85vw;
 }
 
@@ -41,9 +61,18 @@
     margin-top: 5px;
 }
 
-.img {
+.img-container {
+    display: flex;
     width: 285px;
     height: 146px;
+}
+
+.img {
+
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    margin-top: 5px;
 }
 
 .title-bookmark-container {
@@ -56,7 +85,7 @@
     width: 278px;
     height: 18px;
     font-family: CronosPro-Semibold;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     font-style: normal;
     font-stretch: normal;
@@ -64,7 +93,7 @@
     letter-spacing: normal;
     color: var(--black);
     padding: 0 8px 0 8px;
-    margin-top: 0px;
+    margin-top: 8px;
 }
 
 .bookmark {
@@ -75,35 +104,16 @@
 }
 
 .star {
-    width: 16px;
-    height: 16px;
+    width: 15px;
+    height: 15px;
     background-color: var(--blush);
-    padding-left: 8px;
-    margin-top: 2px;
+    padding-left: 6px;
+    margin-top: 12px;
 }
 
-.review-count{
+.review-count {
     font-family: CronosPro-Semibold;
     color: #c3c2c2;
     font-size: 16px;
-    margin: 2px 0 0 8px;
-
-}
-
-.trending-categories-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 30vw;
-}
-
-.trending-categories {
-    font-family: CronosPro-LtCapt;
-    font-size: 14px;
-}
-
-.category {
-    font-family: CronosPro-LtIt;
-    font-size: 14px;
-    font-style: italic;
+    margin: 11px 0 0 8px;
 }

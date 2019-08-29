@@ -39,18 +39,21 @@ class FoodList extends React.Component {
     return this.props.recipes.map((item, index) => {
       return (
         <div className="recipes" key={index}>
-          <img src={item.recipe.image} alt="recipes" className="img" />
+          
+            <div className='img-container'>
+          <img src={item.recipe.image} alt="recipes" className="img" /></div>
+
           <div className="title-bookmark-container">
             <p className="title">{item.recipe.label}</p>{' '}
             <img
               className="bookmark"
-              onClick={this.handleClick}
+            //   onClick={this.handleClick}
               src={this.state.bookmark}
               alt={this.state.alt}
             />
           </div>
           <div
-            style={{ display: 'flex', flexDirection: 'row', height: `${25}px` }}
+            style={{ display: 'flex', flexDirection: 'row', height: `${25}px`, marginBottom: `${23}px` }}
           >
             <img className="star" src={star} />
             <img className="star" src={star} />
