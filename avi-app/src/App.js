@@ -1,8 +1,9 @@
 import React from 'react';
 import Axios from 'axios';
 import './App.css';
-import Search from './components/search'
+import Search from './components/Search/search'
 import FoodList from './components/FoodList'
+
 
 
 class App extends React.Component {
@@ -10,7 +11,7 @@ class App extends React.Component {
     super(props)
     this.state = {
       input: '',
-      homePage: 'trending',
+      homePage: 'healthy',
       recipes: [],
       bookmarks: [],
       isLoaded: false
@@ -41,7 +42,7 @@ class App extends React.Component {
 
   }
   AddInput = async () => {
-    window.scrollTo(0, 300)
+    
     try {
       const KEY = process.env.REACT_APP_TOKEN;
       const ID = process.env.REACT_ID_TOKEN;
@@ -71,9 +72,13 @@ render() {
 
 
       <div className="App">
-        <div className="banner">
-         <Search updateSearch={this.AddInput} handleChange={this.HandleChange} />
+          
+          <div className="banner">
+            <Search updateSearch={this.AddInput} handleChange={this.HandleChange} />
         </div>
+       
+       
+       
          <FoodList handleClick={this.HandleClick} recipes={this.state.recipes} recipe={this.props.recipes} state={this.state}/>
       </div>
     )
