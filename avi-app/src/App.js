@@ -3,7 +3,8 @@ import Axios from 'axios';
 import './App.css';
 import Search from './components/search'
 import FoodList from './components/FoodList'
-
+import { Route } from "react-router-dom";
+import RecipePage from './components/RecipePage/index'
 
 class App extends React.Component {
   constructor(props) {
@@ -71,10 +72,11 @@ render() {
 
 
       <div className="App">
-        <div className="banner">
+        {/* <div className="banner">
          <Search updateSearch={this.AddInput} handleChange={this.HandleChange} />
         </div>
-         <FoodList handleClick={this.HandleClick} recipes={this.state.recipes} recipe={this.props.recipes} state={this.state}/>
+         <FoodList handleClick={this.HandleClick} recipes={this.state.recipes} recipe={this.props.recipes} state={this.state}/> */}
+         <RecipePage />
       </div>
     )
   }
