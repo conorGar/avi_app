@@ -3,6 +3,7 @@ import Axios from 'axios';
 import './App.css';
 import Search from './components/search'
 import FoodList from './components/FoodList'
+import Header from './components/Header';
 
 
 class App extends React.Component {
@@ -68,9 +69,12 @@ class App extends React.Component {
   }
 render() {
     return (
-
-
+     
       <div className="App">
+        <div className="">
+          <Header />
+
+        </div>
         <div className="banner">
          <Search updateSearch={this.AddInput} handleChange={this.HandleChange} />
         </div>

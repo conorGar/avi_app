@@ -1,3 +1,66 @@
 .banner {
     border: solid 5px black
 }
+
+
+.header {
+    background-color:rgb(45, 128, 93); 
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0
+}
+
+.avi {
+    width: 56px;
+    height: 46px;
+    font-family: Phosphate-Inline;
+    font-size: 38px;
+    font-weight: normal;
+    /* font-style: normal; */
+    /* font-stretch: normal; */
+    /* line-height: normal; */
+    /* letter-spacing: normal; */
+    color: #e5a492;
+    margin-right: 310px;
+}
+
+.avocado {
+    height: 60px;
+    width: 60px;
+}
+
+.image {
+    margin-left: 80px;
+    align-items: center;
+}
+.avocado {
+    align-items: center;
+    margin-top: 30px;
+}
+
+.header-nav {
+    display: flex;
+    color: #ffffff;
+    margin: 30px;
+
+}
+
+h1 {
+    margin-right: 90px;
+
+}
+h2 {
+    margin: 20px;
+}
+ 
+.avi-div {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+  
+} 
+
+
+
+
