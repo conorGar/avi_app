@@ -1,36 +1,68 @@
 import React from 'react'
 import './FoodList.css'
+import bookmarkNotSelected from './bookmark-not-selected.png'
+import bookmarkSelected from './bookmark-selected.png'
+import star from './star@2x.png'
 
 class FoodList extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state = props.state;
-        this.props = props
-        this.handleClick = this.handleClick.bind(this);
+  constructor(props) {
+    super(props)
+    this.state = {
+      bookmark: bookmarkNotSelected,
+      bookmarkIsClicked: false
+    }
+    this.props = props
+  }
+
+  handleClick = event => {
+    event.preventDefault()
+    let { alt } = event.target
+    console.log(alt)
+    if (this.state.bookmarkIsClicked === false) {
+      this.setState({
+        bookmark: bookmarkSelected,
+        bookmarkIsClicked: true
+      })
+    } else {
+      this.setState({
+        bookmark: bookmarkNotSelected,
+        bookmarkIsClicked: false
+      })
     }
 
-    handleClick = (event) => {
-        event.preventDefault();
-        this.props.handleClick(event)
+    // this.state.bookmarkIsClicked === false ? this.setState({ bookmark })
 
-    }
+  }
 
+  renderRecipes = () => {
+    return this.props.recipes.map((item, index) => {
+      return (
+        <div className="recipes" key={index}>
+          <img src={item.recipe.image} alt="recipes" className="img" />
+          <div className="title-bookmark-container">
+            <p className="title">{item.recipe.label}</p>{' '}
+            <img
+              className="bookmark"
+              onClick={this.handleClick}
+              src={this.state.bookmark}
+              alt={index}
+            />
+          </div>
 
-    render() {
-        const recipes = this.props.recipes.map((item, index) =>
+          <img className="star" src={star} />
+          <img className="star" src={star} />
+          <img className="star" src={star} />
+          <img className="star" src={star} />
+          <img className="star" src={star} />
+        </div>
+      )
+    })
+  }
 
-            <div className="recipes" key={index}>
-                <h1 className="title">{item.recipe.label}</h1>
-                <img src={item.recipe.image} alt="recipes" className="img" />
-           </div>
-        )
-
-        return (
-
-            <div recipe={this.recipe} className="recipe-list">{recipes}</div>
-        )
-    }
+  render() {
+    // console.log(this.renderRecipes)
+    return <div className="recipe-list">{this.renderRecipes()}</div>
+  }
 }
-
 
 export default FoodList
