@@ -1,15 +1,15 @@
 @font-face {
     font-family: CronosPro-Semibold;
-    src: url(../components/CronosPro/CronosPro-Semibold.otf);
+    src: url(/CronosPro/CronosPro-Semibold.otf);
 }
 @font-face {
     font-family: CronosPro-LtCapt;
-    src: url(../components/CronosPro/CronosPro-LtCapt.otf);
+    src: url(/CronosPro/CronosPro-LtCapt.otf);
 }
 
 @font-face {
     font-family: CronosPro-Ltlt;
-    src: url(../components/CronosPro/CronosPro-LtIt.otf);
+    src: url(/CronosPro/CronosPro-LtIt.otf);
 }
 
 .search {
