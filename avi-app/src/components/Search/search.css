@@ -2,6 +2,7 @@
     font-family: CronosPro-Semibold;
     src: url(/CronosPro/CronosPro-Semibold.otf);
 }
+
 @font-face {
     font-family: CronosPro-LtCapt;
     src: url(/CronosPro/CronosPro-LtCapt.otf);
@@ -17,22 +18,23 @@
     flex-direction: column;
     justify-self: center;
     align-items: center;
-    background-color:#8fc982; 
+    background-color: #8fc982;
     padding: 20px;
     border-radius: 5px;
-    
+    box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.4);
+}
 
+.search-header {
+    display: flex;
+    align-self: center;
+    justify-self: flex-end;
+    font-family: CronosPro-Capt;
+    color: white;
+    font-size: 32px;
+    letter-spacing: 0.44px;
 }
-.search-header{
-  display: flex;
-  align-self: center;
-  justify-self: flex-end;
-  font-family: CronosPro-Capt;
-  color: white;
-  font-size: 32px;
-  letter-spacing: 0.44px;
-}
-.search-sub-header{
+
+.search-sub-header {
     display: flex;
     align-self: center;
     justify-self: flex-start;
@@ -40,9 +42,9 @@
     color: white;
     font-size: 16px;
     letter-spacing: 0.44px;
-  }
+}
 
-.search-bar-text{
+.search-bar-text {
     flex: 1;
     width: 344px;
     height: 35px;
@@ -51,7 +53,8 @@
     font-size: 16px;
     font-family: CronosPro-LtCaptIt;
 }
-.search-bar-button{
+
+.search-bar-button {
     flex: 1;
     width: 88px;
     height: 40px;
@@ -64,15 +67,17 @@
 
 .inspire-box {
     display: flex;
-    align-self: flex-end;   
+    align-self: flex-end;
     justify-self: flex-end;
     flex-direction: row;
     width: 480px;
     height: 50px;
     background-color: white;
     font-family: CronosPro-LtCaptIt;
+    box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.4);
 }
-.inspire-button{
+
+.inspire-button {
     width: 72px;
     height: 35px;
     border-radius: 3px;
@@ -84,11 +89,10 @@
     font-stretch: normal;
     line-height: normal;
     letter-spacing: 0.4px;
-    color:white;
-
+    color: white;
 }
 
-.inspire-box{
+.inspire-box {
     flex: 1;
     align-self: center;
     justify-content: center;
@@ -98,16 +102,15 @@
     border-radius: 6px;
     background-color: white;
     font-family: CronosPro-LtCaptIt;
-
 }
 
-.drop-down{
- flex: 1;
- font-size: 16px;
- width: 432px;
-  height: 35px;
-  border-radius: 3px;
-  margin-bottom: 10px;
-  background-color:white;
-  font-family: CronosPro-LtCaptIt;
+.drop-down {
+    flex: 1;
+    font-size: 16px;
+    width: 432px;
+    height: 35px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    background-color: white;
+    font-family: CronosPro-LtCaptIt;
 }
