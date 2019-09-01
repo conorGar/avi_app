@@ -77,7 +77,7 @@ class App extends React.Component {
        
        
        
-         <FoodList handleClick={this.HandleClick} recipes={this.state.recipes} recipe={this.props.recipes} state={this.state}/>
+         {/* <FoodList handleClick={this.HandleClick} recipes={this.state.recipes} recipe={this.props.recipes} state={this.state}/> */}
 
         <div className='recipe-list-container'>
           <FoodList

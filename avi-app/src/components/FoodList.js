@@ -55,11 +55,11 @@ class FoodList extends React.Component {
           <div
             style={{ display: 'flex', flexDirection: 'row', height: `${25}px`, marginBottom: `${23}px` }}
           >
-            <img className="star" src={star} />
-            <img className="star" src={star} />
-            <img className="star" src={star} />
-            <img className="star" src={star} />
-            <img className="star" src={star} />
+            <img className="star" src={star} alt="pic"/>
+            <img className="star" src={star} alt="pic" />
+            <img className="star" src={star}  alt="pic"/>
+            <img className="star" src={star}  alt="pic"/>
+            <img className="star" src={star} alt="pic" />
 
             <div className="review-count">(560)</div>
           </div>
