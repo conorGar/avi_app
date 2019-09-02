@@ -1,16 +1,16 @@
 @font-face {
     font-family: CronosPro-Semibold;
-    src: url(/CronosPro/CronosPro-Semibold.otf);
+    src: url(/components/CronosPro/CronosPro-Semibold.otf);
 }
 
 @font-face {
     font-family: CronosPro-LtCapt;
-    src: url(/CronosPro/CronosPro-LtCapt.otf);
+    src: url(/components/CronosPro/CronosPro-LtCapt.otf);
 }
 
 @font-face {
     font-family: CronosPro-Ltlt;
-    src: url(/CronosPro/CronosPro-LtIt.otf);
+    src: url(/components/CronosPro/CronosPro-LtIt.otf);
 }
 
 .search {
@@ -161,12 +161,13 @@
     
     .inspire-box {
         display: flex;
-        align-self: flex-end;
         justify-self: flex-end;
         flex-direction: row;
         align-items: center;
-        max-width: 100%;
+        max-width: 100vw;
+        min-width: 100vw;
         max-height: 50px;
+        min-height: 65px;
         background-color: white;
         font-family: CronosPro-LtCaptIt;
         box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.4);
@@ -186,7 +187,6 @@
         letter-spacing: 0.4px;
         color: white;
     }
-    
     .drop-down {
         flex: 1;
         font-size: 16px;
