@@ -71,11 +71,11 @@ render() {
 
 
       <div className="App">
-        {/* <div className="banner">
+        <div className="banner">
          <Search updateSearch={this.AddInput} handleChange={this.HandleChange} />
         </div>
-         <FoodList handleClick={this.HandleClick} recipes={this.state.recipes} recipe={this.props.recipes} state={this.state}/> */}
-        <Filter />
+         <FoodList handleClick={this.HandleClick} recipes={this.state.recipes} recipe={this.props.recipes} state={this.state}/>
+        {/* <Filter /> */}
       </div>
     )
   }
