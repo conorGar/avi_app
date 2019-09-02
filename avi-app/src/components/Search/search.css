@@ -21,7 +21,7 @@
     background-color: #8fc982;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.4);
+  
 }
 
 .search-header {
@@ -55,14 +55,15 @@
 }
 
 .search-bar-button {
-    flex: 1;
-    width: 88px;
-    height: 40px;
+    
+    max-width: 60px;
+    max-height: 40px;
     border-radius: 3px;
     background-color: #457a42;
     color: white;
     font-family: CronosPro-LtCaptIt;
     font-size: 16px;
+    margin-right: 5px;
 }
 
 .inspire-box {
@@ -71,13 +72,14 @@
     justify-self: flex-end;
     flex-direction: row;
     width: 480px;
-    height: 50px;
+    height: 80px;
     background-color: white;
     font-family: CronosPro-LtCaptIt;
     box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.4);
 }
 
 .inspire-button {
+    content:'GO!'; 
     width: 72px;
     height: 35px;
     border-radius: 3px;
@@ -113,4 +115,87 @@
     margin-bottom: 10px;
     background-color: white;
     font-family: CronosPro-LtCaptIt;
+}
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) { 
+    .search {
+        display: flex;
+        flex-direction: row;
+        justify-self: flex-start;
+        align-items: center;
+        background-color: #8fc982;
+        padding: 10px;
+        border-radius: 5px;
+       
+    }
+    
+    .search-header {
+        display: none;
+      
+    }
+    
+    .search-sub-header {
+     
+    display: none
+    }
+    
+    .search-bar-text {
+        flex: 1;
+        width: 200px;
+        height: 35px;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        font-family: CronosPro-LtCaptIt;
+    }
+    
+    .search-bar-button {
+        flex: 1;
+        width: 88px;
+        height: 40px;
+        border-radius: 3px;
+        background-color: #457a42;
+        color: white;
+        font-family: CronosPro-LtCaptIt;
+        font-size: 16px;
+    }
+    
+    .inspire-box {
+        display: flex;
+        align-self: flex-end;
+        justify-self: flex-end;
+        flex-direction: row;
+        align-items: center;
+        max-width: 100%;
+        max-height: 50px;
+        background-color: white;
+        font-family: CronosPro-LtCaptIt;
+        box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.4);
+    }
+    
+    .inspire-button {
+        width: 72px;
+        height: 35px;
+        border-radius: 3px;
+        background-color: #e5a492;
+        font-family: CronosPro-Capt;
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 0.4px;
+        color: white;
+    }
+    
+    .drop-down {
+        flex: 1;
+        font-size: 16px;
+        width: 75px;
+        height: 35px;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        background-color: white;
+        font-family: CronosPro-LtCaptIt;
+    }
+
 }
