@@ -15,45 +15,39 @@ class FoodList extends React.Component {
   }
 
   handleClick = event => {
-    event.preventDefault()
-    let { alt } = event.currentTarget
-    console.log(alt)
     if (this.state.bookmarkIsClicked === false) {
-      this.setState({
-        bookmark: bookmarkSelected,
-        bookmarkIsClicked: true,
-        alt
-      })
+      event.target.src = bookmarkSelected
+      this.setState({ bookmarkIsClicked: true })
     } else {
-      this.setState({
-        bookmark: bookmarkNotSelected,
-        bookmarkIsClicked: false,
-        alt
-      })
+      event.target.src = bookmarkNotSelected
+      this.setState({ bookmarkIsClicked: false })
     }
-
-    // this.state.bookmarkIsClicked === false ? this.setState({ bookmark })
   }
 
   renderRecipes = () => {
     return this.props.recipes.map((item, index) => {
       return (
         <div className="recipes" key={index}>
-          
-            <div className='img-container'>
-          <img src={item.recipe.image} alt="recipes" className="img" /></div>
+          <div className="img-container">
+            <img src={item.recipe.image} alt="recipes" className="img" />
+          </div>
 
           <div className="title-bookmark-container">
             <p className="title">{item.recipe.label}</p>{' '}
             <img
               className="bookmark"
-            //   onClick={this.handleClick}
+              onClick={this.handleClick}
               src={this.state.bookmark}
-              alt={this.state.alt}
+              alt={index}
             />
           </div>
           <div
-            style={{ display: 'flex', flexDirection: 'row', height: `${25}px`, marginBottom: `${23}px` }}
+            style={{
+              display: 'flex',
+              flexDirection: 'row',
+              height: `${25}px`,
+              marginBottom: `${23}px`
+            }}
           >
             <img className="star" src={star} alt="pic"/>
             <img className="star" src={star} alt="pic" />

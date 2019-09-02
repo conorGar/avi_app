@@ -23,12 +23,12 @@ class Search extends React.Component {
             <h2 className="search-header">Looking for inspiration?</h2>
             <p className="search-sub-header">Search millions of delicious, quick, and healthy recipes...</p>
             <form className="search-form"  onSubmit={this.handleInput}>
-            <input className='search-bar-text'placeholder='Search Recipes' type="text" onChange={this.handleChange}/>
+            <input className='search-bar-text'placeholder='Search recipes...' type="text" onChange={this.handleChange}/>
             <input className="search-bar-button"  value='Search' type="submit"></input>
             </form>
 
             <form className="filter" onSubmit={this.handleSubmit}> 
-                 <select  className="drop-down" onChange={this.handleChange} placeholder="filter" >
+                 <select  className="drop-down round" onChange={this.handleChange} placeholder="filter" >
                  <option value="">See only the recipes right for you</option>
                   <option className="drop-down-option"value="vegan">Vegan</option>
                   <option className="drop-down-option" value="vegetarian">Vegetarian</option>
