@@ -126,6 +126,9 @@
             
            
         }
+        .search-form{
+            display: flex;
+        }
         
         .search-header {
             display: none;
