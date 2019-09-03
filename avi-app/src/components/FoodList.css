@@ -138,3 +138,9 @@
     font-style: italic;
     text-decoration: underline;
 }
+ @media only screen and (min-device-width : 414px) and (max-device-width : 736px) { 
+     .recipe-list {
+         display: flex;
+         justify-content: center;
+     }
+ }

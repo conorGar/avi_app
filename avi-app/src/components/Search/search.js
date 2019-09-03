@@ -47,14 +47,7 @@ class Search extends React.Component {
             <form className="filter" onSubmit={this.handleSubmit}> 
                  <div  className="drop-down" onClick={this.handleFilterPopup} placeholder="filter" >
                  See only the recipes right for you
-                 {/* <option value="">See only the recipes right for you</option>
-                  <option className="drop-down-option"value="vegan">Vegan</option>
-                  <option className="drop-down-option" value="vegetarian">Vegetarian</option>
-                  <option className="drop-down-option" value="keto">Keto</option>
-                  <option className="drop-down-option" value="gluten-free">Gluten Free</option>
-                  <option className="drop-down-option" value="paleo">Paleo</option>
-                  <option className="drop-down-option" value="low-sodium">Low Sodium</option>
-                  <option className="drop-down-option" value="dairy-free">Dairy Free</option> */}
+             
 
              </div>
             </form>
