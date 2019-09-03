@@ -45,7 +45,7 @@ class Search extends React.Component {
             </form>
 
             <form className="filter" onSubmit={this.handleSubmit}> 
-                 <div  className="drop-down2" onClick={this.handleFilterPopup} placeholder="filter" >
+                 <div  className="drop-down" onClick={this.handleFilterPopup} placeholder="filter" >
                  See only the recipes right for you
              
 

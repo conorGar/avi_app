@@ -15,9 +15,7 @@ function Header() {
       </div>
       <div className='nav-section'></div>
       <div className='nav-section'></div>
-
-
-    </div>
+  </div>
   )
 }
 
