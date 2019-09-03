@@ -24,10 +24,15 @@ class FoodList extends React.Component {
     }
   }
 
+  handleLinkClick = (e) => {
+    e.preventDefault();
+    this.props.changePage()
+  }
+
   renderRecipes = () => {
     return this.props.recipes.map((item, index) => {
       return (
-        <div className="recipes" key={index}>
+        <div className="recipes" key={index} onClick={this.handleLinkClick}>
           <div className="img-container">
             <img src={item.recipe.image} alt="recipes" className="img" />
           </div>
