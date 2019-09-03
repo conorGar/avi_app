@@ -1,0 +1,140 @@
+@font-face {
+    font-family: CronosPro-Semibold;
+    src: url(../components/CronosPro/CronosPro-Semibold.otf);
+}
+
+@font-face {
+    font-family: CronosPro-LtCapt;
+    src: url(../components/CronosPro/CronosPro-LtCapt.otf);
+}
+
+@font-face {
+    font-family: CronosPro-Ltlt;
+    src: url(../components/CronosPro/CronosPro-LtIt.otf);
+}
+
+.trending-categories-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 35vw;
+}
+
+.trending-categories {
+    font-family: CronosPro-LtCapt;
+    font-size: 14px;
+}
+
+.category {
+    font-family: CronosPro-LtIt;
+    font-size: 14px;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.recipe-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipe-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+    width: 85vw;
+}
+
+.recipes {
+    width: 285px;
+    background: white;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--black);
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.img-container {
+    display: flex;
+    width: 285px;
+    height: 146px;
+    overflow: hidden;
+}
+
+.img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    margin-top: 5px;
+    margin: -15% 0 -30%;
+}
+
+.title-bookmark-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.title {
+    width: 278px;
+    height: 18px;
+    font-family: CronosPro-Semibold;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--black);
+    padding: 0 8px 0 8px;
+    margin-top: 8px;
+}
+
+.bookmark {
+    width: 26px;
+    height: 38px;
+    border: solid 6px var(--greenish-grey);
+    margin-right: 14px;
+}
+
+.star {
+    width: 15px;
+    height: 15px;
+    background-color: var(--blush);
+    padding-left: 6px;
+    margin-top: 10px;
+}
+
+.review-count {
+    font-family: CronosPro-Semibold;
+    color: #c3c2c2;
+    font-size: 16px;
+    margin: 9px 0 0 8px;
+}
+
+.trending-categories-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30vw;
+}
+
+.trending-categories {
+    font-family: CronosPro-LtCapt;
+    font-size: 14px;
+}
+
+.category {
+    font-family: CronosPro-LtIt;
+    font-size: 14px;
+    font-style: italic;
+    text-decoration: underline;
+}

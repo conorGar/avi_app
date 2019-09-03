@@ -4,19 +4,48 @@ import './FIlter.css'
 class Filter extends React.Component{
     constructor(props){
         super(props)
+        this.state ={
+            recommendedClass: 'recommended-select',
+            highestRatedClass: 'highest-rated'
+
+        }
+    }
+
+
+    handleFilterApplication = (e) => {
+        e.preventDefault();
+        this.props.handleSubmit(e);
+    }
+
+    handleRecommendedClick = (e) =>{
+        e.preventDefault();
+        this.setState({
+            recommendedClass: 'recommended-select',
+            highestRatedClass: 'highest-rated'
+
+        })
+    }
+
+    handleHighestRatedClick = (e) =>{
+        e.preventDefault();
+        this.setState({
+            recommendedClass: 'recommended',
+            highestRatedClass: 'highest-rated-select'
+
+        })
     }
 
     render(){
         return(
-            <div className='main-filter-container'>
+            <div className={this.props.currentClass}>
                 <div className='sortby-container'>
                     <p className='sortby-text'>Sort By:</p>
                     <div className='sorting-options'>
-                        <div className='recommended'>
-                            <p>Recommended</p>
+                        <div className={this.state.recommendedClass} onClick={this.handleRecommendedClick}>
+                            <p className='options-text'>Recommended</p>
                         </div>
-                        <div className='highest-rated'>
-                            <p>Highest Rated</p>
+                        <div className={this.state.highestRatedClass} onClick={this.handleHighestRatedClick}>
+                            <p className='options-text'>Highest Rated</p>
                         </div>
                     </div>
 
@@ -109,7 +138,7 @@ class Filter extends React.Component{
                  </div>
                 </div>
 
-                <div className='apply-button'>Apply</div>
+                <div className='apply-button' onClick={this.handleFilterApplication}>Apply</div>
             </div>
         )
     }
