@@ -11,11 +11,11 @@ function RecipeTop  (){
         <React.Fragment>
         <div className="search-form2" >
         <form >
-        <input className='search-bar-text'placeholder='Search Recipes' type="text"/>
-        <input className="search-bar-button"  value='GO!' type="submit"></input>
+        <input className='search-bar-text2'placeholder='Search Recipes' type="text"/>
+        <input className="search-bar-button2"  value='GO!' type="submit"></input>
         </form>
         <form className="filter"> 
-                 <div  className="drop-down"  placeholder="filter" >
+                 <div  className="drop-down2"  placeholder="filter" >
                  Filter
              </div>
             </form>

@@ -1,6 +1,7 @@
 import React from 'react'
 // import { Link } from 'react-router-dom';
 import avacado from './avacado.png'
+import hamburger from './hamburger.png'
 
 function Header() {
   return (
@@ -15,6 +16,7 @@ function Header() {
       </div>
       <div className='nav-section'></div>
       <div className='nav-section'></div>
+      <img className="hamburger" src={hamburger} style={{width: `${20}%`}} />
   </div>
   )
 }

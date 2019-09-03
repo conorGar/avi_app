@@ -1,18 +1,15 @@
 @font-face {
     font-family: CronosPro-Semibold;
-    src: url(/components/CronosPro/CronosPro-Semibold.otf);
+    src: url(/CronosPro/CronosPro-Semibold.otf);
 }
-
 @font-face {
     font-family: CronosPro-LtCapt;
-    src: url(/components/CronosPro/CronosPro-LtCapt.otf);
+    src: url(/CronosPro/CronosPro-LtCapt.otf);
 }
-
 @font-face {
     font-family: CronosPro-Ltlt;
-    src: url(/components/CronosPro/CronosPro-LtIt.otf);
+    src: url(/CronosPro/CronosPro-LtIt.otf);
 }
-
 .search {
     display: flex;
     flex-direction: column;
@@ -21,18 +18,25 @@
     background-color: #8fc982;
     padding: 20px;
     box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.4);
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-top: 64px;
 }
-
 .search-header {
     display: flex;
     align-self: center;
     justify-self: flex-end;
-    font-family: CronosPro-Capt;
+    font-family:  CronosPro-Semibold;
     color: white;
     font-size: 32px;
     letter-spacing: 0.44px;
+    margin: 0;
+    margin-right: 129px;
 }
-
 .search-sub-header {
     display: flex;
     align-self: center;
@@ -41,49 +45,61 @@
     color: white;
     font-size: 16px;
     letter-spacing: 0.44px;
+    margin-right: 50px;
 }
-
 .search-bar-text {
     flex: 1;
     width: 344px;
     height: 35px;
-    border-radius: 3px;
+    /* border-radius: 3px; */
     margin-bottom: 10px;
-    font-size: 16px;
-    font-family: CronosPro-LtCaptIt;
+    font-size: 15px;
+    font-family: CronosPro-Semibold;
+    outline: none;
+    border: 0;
+    padding-left: 10px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
-
 .search-bar-button {
-    
-    max-width: 60px;
-    max-height: 40px;
-    border-radius: 3px;
+    flex: 1;
+    width: 88px;
+    height: 38px;
+    /* border-radius: 3px; */
     background-color: #457a42;
     color: white;
     font-family: CronosPro-LtCaptIt;
     font-size: 16px;
-    margin-right: 5px;
+    outline: none;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 0;
 }
-
 .inspire-box {
     display: flex;
     align-self: flex-end;
     justify-self: flex-end;
     flex-direction: row;
     width: 480px;
-    height: 80px;
+    height: 50px;
     background-color: white;
     font-family: CronosPro-LtCaptIt;
     box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.4);
 }
-
 .inspire-button {
-    content:'GO!'; 
     width: 72px;
     height: 35px;
     border-radius: 3px;
     background-color: #e5a492;
-    font-family: CronosPro-Capt;
+    font-family: CronosPro-Semibold;
     font-size: 16px;
     font-weight: normal;
     font-style: normal;
@@ -91,8 +107,11 @@
     line-height: normal;
     letter-spacing: 0.4px;
     color: white;
+    outline: none;
 }
-
+.inspire-button:hover {
+    color: #457a42;
+}
 .inspire-box {
     flex: 1;
     align-self: center;
@@ -100,13 +119,19 @@
     align-items: center;
     width: 100%;
     height: 45px;
+    /* border-radius: 6px; */
     background-color: white;
     font-family: CronosPro-LtCaptIt;
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
-
-.drop-down2 {
+.drop-down {
     flex: 1;
-    font-size: 16px;
+    font-size: 15px;
     width: 432px;
     height: 35px;
     border-radius: 3px;
@@ -115,90 +140,90 @@
     font-family: CronosPro-LtCaptIt;
     color: rgb(206, 206, 206);
 }
-    @media only screen and (min-device-width : 414px) and (max-device-width : 736px) { 
-        .search {
-            display: flex;
-            flex-direction: row;
-            justify-self: flex-start;
-            align-items: center;
-            background-color: #8fc982;
-            padding: 10px;
-            
-           
-        }
-        .search-form{
-            display: flex;
-        }
-        
-        .search-header {
-            display: none;
-          
-        }
-        
-        .search-sub-header {
-         
-        display: none
-        }
-        
-        .search-bar-text {
-            flex: 1;
-            width: 200px;
-            height: 35px;
-            border-radius: 3px;
-            margin-bottom: 10px;
-            font-size: 16px;
-            font-family: CronosPro-LtCaptIt;
-        }
-        
-        .search-bar-button {
-            flex: 1;
-            width: 88px;
-            height: 40px;
-            border-radius: 3px;
-            background-color: #457a42;
-            color: white;
-            font-family: CronosPro-LtCaptIt;
-            font-size: 16px;
-            margin-right: 10px;
-        }
-        
-        .inspire-box {
-            display: flex;
-            justify-self: flex-end;
-            flex-direction: row;
-            align-items: center;
-            max-width: 100vw;
-            min-width: 100vw;
-            max-height: 50px;
-            min-height: 65px;
-            background-color: white;
-            font-family: CronosPro-LtCaptIt;
-            box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.4);
-        }
-        
-        .inspire-button {
-            width: 72px;
-            height: 35px;
-            border-radius: 3px;
-            background-color: #e5a492;
-            font-family: CronosPro-Capt;
-            font-size: 16px;
-            font-weight: normal;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: normal;
-            letter-spacing: 0.4px;
-            color: white;
-        }
-        .drop-down {
-            flex: 1;
-            font-size: 16px;
-            width: 75px;
-            height: 35px;
-            border-radius: 3px;
-            margin-bottom: 10px;
-            background-color: white;
-            font-family: CronosPro-LtCaptIt;
-        }
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) { 
+    .search {
+        display: flex;
+        flex-direction: row;
+        justify-self: flex-start;
+        align-items: center;
+        background-color: #8fc982;
+        padding: 10px;
+        border-radius: 5px;
+       
+    }
+
+    /* .banner-image {
+        height: 100px;
+    } */
+    
+    .search-header {
+        display: none;
+      
+    }
+    
+    .search-sub-header {
+     
+    display: none
+    }
+    
+    .search-bar-text {
+        flex: 1;
+        width: 200px;
+        height: 35px;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        font-family: CronosPro-LtCaptIt;
+    }
+    
+    .search-bar-button {
+        flex: 1;
+        width: 88px;
+        height: 40px;
+        border-radius: 3px;
+        background-color: #457a42;
+        color: white;
+        font-family: CronosPro-LtCaptIt;
+        font-size: 16px;
+    }
+    
+    .inspire-box {
+        display: flex;
+        justify-self: flex-end;
+        flex-direction: row;
+        align-items: center;
+        max-width: 100vw;
+        min-width: 100vw;
+        max-height: 50px;
+        min-height: 65px;
+        background-color: white;
+        font-family: CronosPro-LtCaptIt;
+        box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.4);
     
     }
+    
+    .inspire-button {
+        width: 72px;
+        height: 35px;
+        border-radius: 3px;
+        background-color: #e5a492;
+        font-family: CronosPro-Capt;
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 0.4px;
+        color: white;
+    }
+    .drop-down {
+        flex: 1;
+        font-size: 16px;
+        width: 75px;
+        height: 35px;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        background-color: white;
+        font-family: CronosPro-LtCaptIt;
+    }
+}

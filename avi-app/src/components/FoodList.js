@@ -37,7 +37,7 @@ class FoodList extends React.Component {
 
           <div className="recipes" key={index} >
             <div className="img-container">
-            <Link to="/recipe" className="links">   <img src={item.recipe.image} alt="recipes" className="img" /></Link>
+            <Link to="/recipe" className="links"> <img src={item.recipe.image} alt="recipes" className="img" /></Link>
             </div>
 
             <div className="title-bookmark-container">

@@ -96,7 +96,7 @@
     box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.4);
     margin-bottom: 50px;
 }
-.search-bar-text {
+.search-bar-text2 {
     width: 350px;
     height: 45px;
     font-family: CronosPro-LtCaptIt;
@@ -104,14 +104,15 @@
     letter-spacing: 0.55px;
     color: black;
 }
-.search-bar-button {
+.search-bar-button2 {
     flex:1;
     width: 88px;
     height: 52px;
     background-color: #457a42;
     margin-right: 50px;
+
 }
-.drop-down {
+.drop-down2 {
     flex: 1;
     width: 152px;
     height: 40px;
