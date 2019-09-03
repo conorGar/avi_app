@@ -4,9 +4,9 @@ import './App.css'
 import Search from './components/Search/search'
 import FoodList from './components/FoodList'
 import { Route } from "react-router-dom";
-import RecipePage from './components/RecipePage/index'
 import Header from './components/Header';
 
+import RecipePage from './components/RecipePage/index'
 
 class App extends React.Component {
   constructor(props) {
