@@ -5,6 +5,7 @@ import Search from './components/Search/search'
 import FoodList from './components/FoodList'
 import { Route } from "react-router-dom";
 import Header from './components/Header';
+import RecipeTop from './components/RecipePage/RecipeTop'
 
 import RecipePage from './components/RecipePage/index'
 

@@ -44,8 +44,8 @@ class Search extends React.Component {
             <input className="search-bar-button"  value='Search' type="submit"></input>
             </form>
 
-            <form className="filter" onSubmit={this.handleSubmit}> 
-                 <div  className="drop-down" onClick={this.handleFilterPopup} placeholder="filter" >
+            <form className="filter2" onSubmit={this.handleSubmit}> 
+                 <div  className="drop-down2" onClick={this.handleFilterPopup} placeholder="filter" >
                  See only the recipes right for you
              
 
