@@ -1,8 +1,24 @@
+@font-face {
+    font-family: CronosPro-Semibold;
+    src: url(/CronosPro/CronosPro-Semibold.otf);
+}
+
+@font-face {
+    font-family: CronosPro-LtCapt;
+    src: url(/CronosPro/CronosPro-LtCapt.otf);
+}
+
+@font-face {
+    font-family: CronosPro-Ltlt;
+    src: url(/CronosPro/CronosPro-LtIt.otf);
+}
+
+
 .recipe-container-top{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 0 140px;
+    margin: 80px 140px;
 }
 
 .left-container{
@@ -21,12 +37,14 @@
     background-image: url("https://assets3.thrillist.com/v1/image/2797371/size/tmg-article_default_mobile.jpg");
     background-size: cover;
     width: 100%;
-    height: 300px;
+    height: 400px;
 }
 
 
 .right-container{
     margin-left: 40px;
+    margin-top: -10px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -40,7 +58,7 @@
     border-radius: 50%;
 }
 
-.bookmark{
+.bookmark-2{
     background-color: greenyellow;
     width: 50px;
     height: 80px;
@@ -51,10 +69,53 @@
     font-size: 10px;
 }
 
+
 .info-container{
     text-align: center;
+    margin:5px;
 }
 
 .info-category{
     font-size: 10px;
+    margin: 0;
+}
+
+.search-form2 {
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: #8fc982;
+    max-width: 100vw;
+    min-width: 100vw;
+    height: 45px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.4);
+    margin-bottom: 50px;
+}
+.search-bar-text {
+    width: 350px;
+    height: 45px;
+    font-family: CronosPro-LtCaptIt;
+    font-size: 22px;
+    letter-spacing: 0.55px;
+    color: black;
+}
+.search-bar-button {
+    flex:1;
+    width: 88px;
+    height: 52px;
+    background-color: #457a42;
+    margin-right: 50px;
+}
+.drop-down {
+    flex: 1;
+    width: 152px;
+    height: 40px;
+    font-family: CronosPro-LtCaptIt;
+    font-size: 16px;
+    color: black;
 }

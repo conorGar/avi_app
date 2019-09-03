@@ -3,6 +3,7 @@ import './FoodList.css'
 import bookmarkNotSelected from './bookmark-not-selected.png'
 import bookmarkSelected from './bookmark-selected.png'
 import star from './star@2x.png'
+import { Link } from 'react-router-dom'
 
 class FoodList extends React.Component {
   constructor(props) {
@@ -24,40 +25,48 @@ class FoodList extends React.Component {
     }
   }
 
+  handleLinkClick = (e) => {
+    e.preventDefault();
+    // this.props.changePage()
+  }
+
   renderRecipes = () => {
     return this.props.recipes.map((item, index) => {
       return (
-        <div className="recipes" key={index}>
-          <div className="img-container">
-            <img src={item.recipe.image} alt="recipes" className="img" />
-          </div>
+        <Link to="/recipe" className="links">
 
-          <div className="title-bookmark-container">
-            <p className="title">{item.recipe.label}</p>{' '}
-            <img
-              className="bookmark"
-              onClick={this.handleClick}
-              src={this.state.bookmark}
-              alt={index}
-            />
-          </div>
-          <div
-            style={{
-              display: 'flex',
-              flexDirection: 'row',
-              height: `${25}px`,
-              marginBottom: `${23}px`
-            }}
-          >
-            <img className="star" src={star} alt="pic"/>
-            <img className="star" src={star} alt="pic" />
-            <img className="star" src={star}  alt="pic"/>
-            <img className="star" src={star}  alt="pic"/>
-            <img className="star" src={star} alt="pic" />
+          <div className="recipes" key={index} >
+            <div className="img-container">
+              <img src={item.recipe.image} alt="recipes" className="img" />
+            </div>
 
-            <div className="review-count">(560)</div>
+            <div className="title-bookmark-container">
+              <p className="title">{item.recipe.label}</p>{' '}
+              <img
+                className="bookmark"
+                onClick={this.handleClick}
+                src={this.state.bookmark}
+                alt={index}
+              />
+            </div>
+            <div
+              style={{
+                display: 'flex',
+                flexDirection: 'row',
+                height: `${25}px`,
+                marginBottom: `${23}px`
+              }}
+            >
+              <img className="star" src={star} alt="pic"/>
+              <img className="star" src={star} alt="pic" />
+              <img className="star" src={star}  alt="pic"/>
+              <img className="star" src={star}  alt="pic"/>
+              <img className="star" src={star} alt="pic" />
+
+              <div className="review-count">(560)</div>
+            </div>
           </div>
-        </div>
+        </Link>
       )
     })
   }

@@ -1,16 +1,16 @@
 @font-face {
     font-family: CronosPro-Semibold;
-    src: url(/CronosPro/CronosPro-Semibold.otf);
+    src: url(/components/CronosPro/CronosPro-Semibold.otf);
 }
 
 @font-face {
     font-family: CronosPro-LtCapt;
-    src: url(/CronosPro/CronosPro-LtCapt.otf);
+    src: url(/components/CronosPro/CronosPro-LtCapt.otf);
 }
 
 @font-face {
     font-family: CronosPro-Ltlt;
-    src: url(/CronosPro/CronosPro-LtIt.otf);
+    src: url(/components/CronosPro/CronosPro-LtIt.otf);
 }
 
 .search {
@@ -21,7 +21,7 @@
     background-color: #8fc982;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.4);
+  
 }
 
 .search-header {
@@ -55,14 +55,15 @@
 }
 
 .search-bar-button {
-    flex: 1;
-    width: 88px;
-    height: 40px;
+    
+    max-width: 60px;
+    max-height: 40px;
     border-radius: 3px;
     background-color: #457a42;
     color: white;
     font-family: CronosPro-LtCaptIt;
     font-size: 16px;
+    margin-right: 5px;
 }
 
 .inspire-box {
@@ -71,13 +72,14 @@
     justify-self: flex-end;
     flex-direction: row;
     width: 480px;
-    height: 50px;
+    height: 80px;
     background-color: white;
     font-family: CronosPro-LtCaptIt;
     box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.4);
 }
 
 .inspire-button {
+    content:'GO!'; 
     width: 72px;
     height: 35px;
     border-radius: 3px;
@@ -104,7 +106,7 @@
     font-family: CronosPro-LtCaptIt;
 }
 
-.drop-down {
+.drop-down2 {
     flex: 1;
     font-size: 16px;
     width: 432px;
@@ -115,7 +117,6 @@
     font-family: CronosPro-LtCaptIt;
     color: rgb(206, 206, 206);
 }
-
 @media only screen and (min-device-width : 414px) and (max-device-width : 736px) { 
     .search {
         display: flex;

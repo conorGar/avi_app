@@ -5,6 +5,7 @@ import Search from './components/Search/search'
 import FoodList from './components/FoodList'
 import { Route } from "react-router-dom";
 import Header from './components/Header';
+import RecipeTop from './components/RecipePage/RecipeTop'
 
 import RecipePage from './components/RecipePage/index'
 
@@ -67,22 +68,42 @@ class App extends React.Component {
         <div className="">
           <Header />
         </div>
-        <div className="banner">
-          <Search
-            updateSearch={this.AddInput}
-            handleChange={this.HandleChange}
-          />
-        </div>
 
-    
+        <Route
+            exact
+            path="/"
+            render={props => 
+              <div>
+                <div className="banner">
+                <Search
+                  updateSearch={this.AddInput}
+                  handleChange={this.HandleChange}
+                />
+                  </div>
 
-        <div className="recipe-list-container">
-          <FoodList
-            recipes={this.state.recipes}
-            recipe={this.props.recipes}
-            state={this.state}
+              
+
+                  <div className="recipe-list-container">
+                    <FoodList
+                      recipes={this.state.recipes}
+                      recipe={this.props.recipes}
+                      state={this.state}
+                      
+                    />
+                  </div>
+
+              </div>
+            }
           />
-        </div>
+
+        <Route
+            exact
+            path="/recipe"
+            render={props => 
+              <RecipePage />
+            }
+          />  
+      
       
 
       </div>
