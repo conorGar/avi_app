@@ -56,7 +56,7 @@
 }
 
 .avocado-image {
-    padding-left: 100px;
+    padding-left: 20px;
     height: 60px;
     position: relative;
     top: 6px
@@ -79,19 +79,27 @@
     width: 30vw;
 }
 
-p {
+.nav-text {
     /* margin-right: 90px; */
     font-family: CronosPro-Semibold;
-    width: 20w;
+    font-size: 20px
     
   
 }
 
-@media only screen and (min-device-width : 414px) and (max-device-width : 736px) {
+@media only screen and (min-device-width : 350px) and (max-device-width : 736px) {
     .banner {
         background-image: none;
         background-color: #8fc982;
         height: 100px;
     }
+
+.nav-text {
+    /* margin-right: 90px; */
+    display: none;
+    
+    
+  
+}
 }
 
