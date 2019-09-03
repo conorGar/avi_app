@@ -6,8 +6,7 @@ import Header from '../Header.js'
 function RecipePage(){
     return (
         <div>
-            <Header />
-            <RecipeTop />
+             <RecipeTop />
             <RecipeBottom />
         </div>
     )

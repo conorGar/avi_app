@@ -64,28 +64,47 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <div className="">
-          <Header />
-        </div>
-        <div className="banner">
-          <Search
-            updateSearch={this.AddInput}
-            handleChange={this.HandleChange}
-          />
-        </div>
+      <div className="">
+        <Header />
+      </div>
+        <Route
+          exact
+          path="/"
+          render={props => 
+            <div>
+              <div className="banner">
+              <Search
+                updateSearch={this.AddInput}
+                handleChange={this.HandleChange}
+              />
+                </div>
 
+            
+
+                <div className="recipe-list-container">
+                  <FoodList
+                    recipes={this.state.recipes}
+                    recipe={this.props.recipes}
+                    state={this.state}
+                    
+                  />
+                </div>
+
+            </div>
+          }
+        />
+
+      <Route
+          exact
+          path="/recipe"
+          render={props => 
+            <RecipePage />
+          }
+        />  
+    
     
 
-        <div className="recipe-list-container">
-          <FoodList
-            recipes={this.state.recipes}
-            recipe={this.props.recipes}
-            state={this.state}
-          />
-        </div>
-      
-
-      </div>
+    </div>
     )
   }
 }

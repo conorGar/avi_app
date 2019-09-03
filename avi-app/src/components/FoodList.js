@@ -3,6 +3,7 @@ import './FoodList.css'
 import bookmarkNotSelected from './bookmark-not-selected.png'
 import bookmarkSelected from './bookmark-selected.png'
 import star from './star@2x.png'
+import {Link} from 'react-router-dom'
 
 class FoodList extends React.Component {
   constructor(props) {
@@ -29,7 +30,8 @@ class FoodList extends React.Component {
       return (
         <div className="recipes" key={index}>
           <div className="img-container">
-            <img src={item.recipe.image} alt="recipes" className="img" />
+          
+         <Link to="/recipe" className="links"><img src={item.recipe.image} alt="recipes" className="img"/></Link> 
           </div>
 
           <div className="title-bookmark-container">

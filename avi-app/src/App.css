@@ -94,12 +94,14 @@
         height: 100px;
     }
 
-.nav-text {
-    /* margin-right: 90px; */
-    display: none;
-    
-    
-  
-}
 }
 
+@media only screen and (min-device-width : 414px) and (max-device-width : 768px) { 
+    .nav-text {
+        /* margin-right: 90px; */
+        display: none;
+        
+        
+      
+    }
+}
