@@ -1,5 +1,5 @@
 import React from 'react'
-
+import bookmarkIcon from '../../bookmark-not-selected.png'
 
 import './RecipeTop.css'
 
@@ -16,7 +16,12 @@ function RecipeTop  (){
                         <h4>Crunchy Quinoa Salad</h4>
                     </div>
                     <div className='let-bookmark-container'>
-                        <div className='bookmark-2'>
+                        <div>
+                            <img
+                                className="bookmark"
+                                src={bookmarkIcon}
+                                alt='bookmark'
+                            />
                         </div>
                         <div className='left-info'>
                             <p className='title-info'>Yield: 6 servings</p>
