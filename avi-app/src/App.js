@@ -1,7 +1,6 @@
-
-import React from 'react';
-import Axios from 'axios';
-import './App.css';
+import React from 'react'
+import Axios from 'axios'
+import './App.css'
 import Search from './components/Search/search'
 import FoodList from './components/FoodList'
 import { Route } from "react-router-dom";
@@ -42,7 +41,6 @@ class App extends React.Component {
     }
   }
   AddInput = async () => {
-    
     try {
       const KEY = process.env.REACT_APP_TOKEN
       const ID = process.env.REACT_ID_TOKEN
@@ -65,34 +63,29 @@ class App extends React.Component {
   }
   render() {
     return (
-
-
-     
       <div className="App">
-        {/* <div className="">
+        <div className="">
           <Header />
-
         </div>
         <div className="banner">
-         <Search updateSearch={this.AddInput} handleChange={this.HandleChange} />
+          <Search
+            updateSearch={this.AddInput}
+            handleChange={this.HandleChange}
+          />
         </div>
-       
-       
-       
-         <FoodList handleClick={this.HandleClick} recipes={this.state.recipes} recipe={this.props.recipes} state={this.state}/>
 
-        <div className='recipe-list-container'>
+    
+
+        <div className="recipe-list-container">
           <FoodList
             recipes={this.state.recipes}
             recipe={this.props.recipes}
             state={this.state}
           />
-        </div> */}
-        <RecipePage />
         </div>
-
       
 
+      </div>
     )
   }
 }

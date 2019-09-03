@@ -11,9 +11,8 @@
 
 .banner {
     display: flex;
-    padding: 25px;
+    padding: 25px 0 25px 0;
     border-radius: 6px;
-    box-shadow: 1px 4px 8px 1px rgba(0, 0, 0, 0.4);
     background-image: url('./components/Search/banner.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -59,6 +58,8 @@
 .avocado-image {
     padding-left: 100px;
     height: 60px;
+    position: relative;
+    top: 6px
 }
 
 .avi-div {
@@ -66,6 +67,7 @@
 }
 
 .header-nav {
+    margin-left: 30px;
     display: flex;
     color: #ffffff;
     width: 18vw;
@@ -81,5 +83,7 @@ p {
     /* margin-right: 90px; */
     font-family: CronosPro-Semibold;
     width: 20w;
+    
+  
 }
 

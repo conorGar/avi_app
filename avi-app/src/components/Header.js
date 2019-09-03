@@ -10,8 +10,8 @@ function Header() {
         <h1 className="avi">AVI</h1>
 
       <div className="header-nav">
-        <p>Ask the experts</p>
         <p>Browse Categories</p>
+        <p>Ask the experts</p>
       </div>
       <div className='nav-section'></div>
       <div className='nav-section'></div>

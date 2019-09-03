@@ -44,7 +44,6 @@ class Search extends React.Component {
              <p className="inspire">Not sure what you are in the mood for? <button className="inspire-button">Inspire</button></p>
             </div>
         </div>
-       
      
         
         )
