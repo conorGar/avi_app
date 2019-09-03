@@ -43,12 +43,14 @@ class Search extends React.Component {
             <input className='search-bar-text'placeholder='Search Recipes' type="text" onChange={this.handleChange}/>
             <input className="search-bar-button"  value='Search' type="submit"></input>
             </form>
-            <form className="filter" onSubmit={this.handleSubmit}>
-                <div  className="drop-down" onClick={this.handleFilterPopup} placeholder="filter" >
-                See only the recipes right for you
-            </div>
-           </form>
 
+            <form className="filter" onSubmit={this.handleSubmit}> 
+                 <div  className="drop-down2" onClick={this.handleFilterPopup} placeholder="filter" >
+                 See only the recipes right for you
+             
+
+             </div>
+            </form>
         </div>
         <div className="inspire-box">
              <p className="inspire">Not sure what you are in the mood for? <button className="inspire-button">Inspire</button></p>

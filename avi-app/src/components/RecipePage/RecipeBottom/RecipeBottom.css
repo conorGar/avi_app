@@ -11,10 +11,12 @@
 }
 .rating-title {
     font-size: 10px;
-    background-color: red;
     margin: 20px 0 0 0;
 }
-
+.star2 {
+    width: 5px;
+    height: 10px;
+}
 
 .rating-counter-container {
     font-size: 5px;

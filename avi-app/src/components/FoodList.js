@@ -25,41 +25,48 @@ class FoodList extends React.Component {
     }
   }
 
+  handleLinkClick = (e) => {
+    e.preventDefault();
+    // this.props.changePage()
+  }
+
   renderRecipes = () => {
     return this.props.recipes.map((item, index) => {
       return (
-        <div className="recipes" key={index}>
-          <div className="img-container">
-          
-         <Link to="/recipe" className="links"><img src={item.recipe.image} alt="recipes" className="img"/></Link> 
-          </div>
+        
 
-          <div className="title-bookmark-container">
-            <p className="title">{item.recipe.label}</p>{' '}
-            <img
-              className="bookmark"
-              onClick={this.handleClick}
-              src={this.state.bookmark}
-              alt={index}
-            />
-          </div>
-          <div
-            style={{
-              display: 'flex',
-              flexDirection: 'row',
-              height: `${25}px`,
-              marginBottom: `${23}px`
-            }}
-          >
-            <img className="star" src={star} alt="pic"/>
-            <img className="star" src={star} alt="pic" />
-            <img className="star" src={star}  alt="pic"/>
-            <img className="star" src={star}  alt="pic"/>
-            <img className="star" src={star} alt="pic" />
+          <div className="recipes" key={index} >
+            <div className="img-container">
+            <Link to="/recipe" className="links">   <img src={item.recipe.image} alt="recipes" className="img" /></Link>
+            </div>
 
-            <div className="review-count">(560)</div>
+            <div className="title-bookmark-container">
+              <p className="title">{item.recipe.label}</p>{' '}
+              <img
+                className="bookmark"
+                onClick={this.handleClick}
+                src={this.state.bookmark}
+                alt={index}
+              />
+            </div>
+            <div
+              style={{
+                display: 'flex',
+                flexDirection: 'row',
+                height: `${25}px`,
+                marginBottom: `${23}px`
+              }}
+            >
+              <img className="star" src={star} alt="pic"/>
+              <img className="star" src={star} alt="pic" />
+              <img className="star" src={star}  alt="pic"/>
+              <img className="star" src={star}  alt="pic"/>
+              <img className="star" src={star} alt="pic" />
+
+              <div className="review-count">(560)</div>
+            </div>
           </div>
-        </div>
+     
       )
     })
   }
